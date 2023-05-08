@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Kdam+Thmor&display=swap" rel="stylesheet">
+    <title>Transformed Text</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav>
+        <h1>Transformed Text</h1>
+        <div class="items">
+            <a href="mailto:link.certo250@gmail.com">Contato</a>
+            <a href="https://github.com/GuilhermeSousaDev" target="_blank" rel="noreferrer">GitHub</a>
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <main>
+        <textarea
+        id="txt" 
+        cols="70" 
+        rows="17" 
+        placeholder="Digite o Texto"  
+        ></textarea>
+        <div class="buttonDirection">
+            <button onclick="upperCase()">Aumentar</button>
+            <button onclick="lowerCase()">Diminuir</button>
+            <button onclick="inputVisible()">Escolher uma cor</button>
+            <input type="text" id="inp" onkeyup="color()" placeholder="Escolha uma cor">
+        </div>
+        <span style="font-family:Roboto Condensed">Escolha uma fonte</span>
+        <div class="fonts">
+            <button id="f" onclick="fontFantasy()">F</button>
+            <button id="s" onclick="fontSans()">S</button>
+            <button id="r" onclick="fontRoboto()">R</button>
+            <button id="g" onclick="fontGirassol()">G</button>
+            <button id="k" onclick="fontKdam()">T</button>
+            <button id="I" onclick="fontItim()">I</button>
+        </div>
+    </main>
+</body>
+</html>

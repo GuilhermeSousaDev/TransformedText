@@ -1,0 +1,121 @@
+/*Font 
+font-family: 'Girassol', cursive;
+ branco #F2F2F2
+ cinzaClaro #D9D9D9
+ esmaecido #BFBFBF
+ cinza #404040
+ preto #0D0D0D
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #BFBFBF;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #F2F2F2;
+}
+nav h1 {
+    font-family: 'Girassol',cursive;
+}
+nav a {
+    margin: 25px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.items i{
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+}
+main #inp{
+    display: none;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+}
+textarea{
+    padding: 5px;
+    font-size: 20px;
+    width: 70%;
+    height: 70%;
+}
+button {
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 15px;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: #D9D9D9;
+} 
+main .fonts{
+    font-size: 25px;
+    height: 100px;
+}
+#f{
+    font-family: fantasy;
+    font-size: 25px;
+}
+#s{
+    font-family: sans-serif;
+    font-size: 25px;
+}
+#r{
+    font-family: 'Roboto Condensed';
+    font-size: 25px;
+}
+#g{
+    font-family: 'Girassol';
+    font-size: 25px;
+}
+
+#k{
+    font-family: 'Kdam Thmor', cursive;
+    font-size: 20px;
+}
+#I{
+    font-family: 'Itim';
+    font-size: 25px;
+}
+@media screen and (max-width:809px){
+    #txt{
+        max-width: 80%;
+    }
+}
+@media screen and (max-width:516px) {
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav a {
+        display: none;
+    }
+    .items i{
+        display: block;
+    }
+}
